@@ -3,13 +3,13 @@ import './App.css';
 import React, { useState } from 'react'
 import ColorBlock from './ColorBlock'
 
-function App(){
-    let colors = [
-        'violet', 'blue',
-        'lightblue', 'green',
-        'greenyellow', 'yellow',
-        'orange', 'red'
-    ]
+  function App(){
+      let [colors, setColors] = useState([
+          'violet', 'blue',
+          'lightblue', 'green',
+          'greenyellow', 'yellow',
+          'orange', 'red'
+      ])
     
     let colorMap = colors.map((color, i) => {
         return (
@@ -22,10 +22,16 @@ function App(){
             {colorMap}
         </div>
     )
-}
+
+   
+    }
+
+
 
 
 export default App;
+
+
 
 
 
